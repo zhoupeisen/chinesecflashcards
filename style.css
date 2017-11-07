@@ -1,0 +1,40 @@
+a {text-decoration: none;}
+
+a:hover{color: #f00;}
+
+body{
+	margin: auto;
+	text-align: center;
+}
+
+img {
+	margin: auto;
+	border: 1px solid #000;
+}
+
+.display-left{
+	width: 20%;
+}
+
+.display-right{
+	width: 20%;
+}
+
+#wrdlist{ margin: auto;}
+
+#right{ color: green;}
+
+#wrong{ color: red;}
+
+button{ margin: 5px;}
+
+@media screen and (max-width: 560px){
+	img {
+		width: 100%;
+	}
+	
+	#labelwrd{
+		display: block;
+	}
+}
+

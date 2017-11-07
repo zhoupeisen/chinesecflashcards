@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html>
+  <head>
+	<meta charset="utf-8">
+	<title>Chinese Workshop</title>
+	<link rel="stylesheet" href="normalize.css">
+	<link rel="stylesheet" href="style.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  </head>
+  <body>
+	<header>
+		<h2>Chinese Digital Flashcards:</h2>
+    </header>
+
+	<div class="display-container">
+		<img class="flash-cards" src="characters/this.jpg">
+		<img class="flash-cards" src="characters/12.jpg">
+		<img class="flash-cards" src="characters/not.jpg">
+		<img class="flash-cards" src="characters/american.jpg">
+		<img class="flash-cards" src="characters/and.jpg">
+		<img class="flash-cards" src="characters/ask.jpg">
+		<img class="flash-cards" src="characters/be.jpg">
+		<img class="flash-cards" src="characters/she.jpg">
+		<img class="flash-cards" src="characters/birthday.jpg">
+		<img class="flash-cards" src="characters/both_or_all.jpg">
+		<img class="flash-cards" src="characters/older_sister.jpg">
+		<img class="flash-cards" src="characters/bye.jpg">
+		<img class="flash-cards" src="characters/called.jpg">
+		<img class="flash-cards" src="characters/what.jpg">
+		<img class="flash-cards" src="characters/chinese.jpg">
+		<img class="flash-cards" src="characters/couple.jpg">
+		<img class="flash-cards" src="characters/how_many.jpg">
+		<img class="flash-cards" src="characters/day.jpg">
+		<img class="flash-cards" src="characters/student.jpg">
+		<img class="flash-cards" src="characters/moon_or_month.jpg">
+		<img class="flash-cards" src="characters/doctor.jpg">
+		<img class="flash-cards" src="characters/eat.jpg">
+		<img class="flash-cards" src="characters/england.jpg">
+		<img class="flash-cards" src="characters/you.jpg">
+		<img class="flash-cards" src="characters/evening.jpg">
+		<img class="flash-cards" src="characters/family_or_home.jpg">
+		<img class="flash-cards" src="characters/father.jpg">
+		<img class="flash-cards" src="characters/half.jpg">
+		<img class="flash-cards" src="characters/have.jpg">
+		<img class="flash-cards" src="characters/he.jpg">
+		<img class="flash-cards" src="characters/honorable_or_expensive.jpg">
+		<img class="flash-cards" src="characters/daughter.jpg">
+		<img class="flash-cards" src="characters/how_many_or_some.jpg">
+		<img class="flash-cards" src="characters/i.jpg">
+		<img class="flash-cards" src="characters/is_it_ok.jpg">
+		<img class="flash-cards" src="characters/lawyer.jpg">
+		<img class="flash-cards" src="characters/what_day.jpg">
+		<img class="flash-cards" src="characters/male.jpg">
+		<img class="flash-cards" src="characters/meal.jpg">
+		<img class="flash-cards" src="characters/measure_word_number.jpg">
+		<img class="flash-cards" src="characters/miss.jpg">
+		<img class="flash-cards" src="characters/do.jpg">
+		<img class="flash-cards" src="characters/mother.jpg">
+		<img class="flash-cards" src="characters/mr.jpg">
+		<img class="flash-cards" src="characters/younger_sister.jpg">
+		<img class="flash-cards" src="characters/18.jpg">
+		<img class="flash-cards" src="characters/not2.jpg">
+		<img class="flash-cards" src="characters/o'clock.jpg">
+		<img class="flash-cards" src="characters/older_brother.jpg">
+		<img class="flash-cards" src="characters/but.jpg">
+		<img class="flash-cards" src="characters/teacher.jpg">
+		<img class="flash-cards" src="characters/845.jpg">
+		<img class="flash-cards" src="characters/person.jpg">
+		<img class="flash-cards" src="characters/picture.jpg">
+		<img class="flash-cards" src="characters/question.jpg">
+		<img class="flash-cards" src="characters/request.jpg">
+		<img class="flash-cards" src="characters/see.jpg">
+		<img class="flash-cards" src="characters/september.jpg">
+		<img class="flash-cards" src="characters/big_or_old.jpg">
+		<img class="flash-cards" src="characters/son.jpg">
+		<img class="flash-cards" src="characters/dish.jpg">
+		<img class="flash-cards" src="characters/surname.jpg">
+		<img class="flash-cards" src="characters/particle.jpg">
+		<img class="flash-cards" src="characters/thanks.jpg">
+		<img class="flash-cards" src="characters/that.jpg">
+		<img class="flash-cards" src="characters/9.jpg">
+		<img class="flash-cards" src="characters/hi.jpg">
+		<img class="flash-cards" src="characters/this_year.jpg">
+		<img class="flash-cards" src="characters/thursday.jpg">
+		<img class="flash-cards" src="characters/to_work.jpg">
+		<img class="flash-cards" src="characters/too_or_also.jpg">
+		<img class="flash-cards" src="characters/university.jpg">
+		<img class="flash-cards" src="characters/very_well.jpg">
+		<img class="flash-cards" src="characters/we.jpg">
+		<img class="flash-cards" src="characters/well.jpg">
+		<img class="flash-cards" src="characters/now.jpg">
+		<img class="flash-cards" src="characters/child.jpg">
+		<img class="flash-cards" src="characters/like.jpg">
+		<img class="flash-cards" src="characters/who.jpg">
+		<img class="flash-cards" src="characters/years_old.jpg">
+		<img class="flash-cards" src="characters/english.jpg">
+		<img class="flash-cards" src="characters/younger_brother.jpg">
+		<img class="flash-cards" src="characters/name.jpg">
+		<img class="flash-cards" src="characters/also.jpg">
+		<button class="display-left" onclick="plusDivs(-1)">&#10094;</button>
+		<button class="display-right" onclick="plusDivs(1)">&#10095;</button>
+		<br> <!-- new line between buttons -->
+		<button class="answer" onclick=showans()>show answer:</button>
+		<label for="answer" id="ans"></label>
+		<br> <!-- new line for audio -->
+		<audio id="hear" src="" controls autobuffer="true" title="&#9654"></audio>
+		<br>
+		<button class="sort" onclick=shuffle()>shuffle</button> <!-- shuffle cards -->
+	</div>
+
+	<form autocomplete="off">
+		<label for="wrd" id="labelwrd">answer here:</label>
+		<input type="text" id="wrd" style="text-transform: lowercase;" required>
+		<input type="button" id="test" value="test" onclick=check()>
+	</form>
+	
+	<form>
+		<label id="right"><b>right!</b></label>
+		<label id="wrong"><b>wrong, try again.</b></label>
+		<label id="test"></label>
+	</form>
+	<!-- table to show words possible /out of date/
+	<label for="wrdlist"><b>possible input:</b></label>
+	<table id="wrdlist" style="width: 100%">
+	  <tr><td>9</td></tr>
+	  <tr><td>12</td></tr>
+	  <tr><td>18</td></tr>	  
+	  <tr><td>american</td></tr>
+	  <tr><td>ask</td></tr>
+	</table>
+	-->
+	<script>
+		//some gobal variables
+		var slideIndex = 1;
+		var answer;
+		
+		showDivs(slideIndex);
+		document.getElementById("right").style.visibility = 'hidden';
+		document.getElementById("wrong").style.visibility = 'hidden';
+		document.getElementById("ans").style.visibility = 'hidden';
+		document.getElementById("wrd").addEventListener("keydown", function(event) {
+			if (event.key === 'Enter') {
+				event.preventDefault() //prevent page auto refresh
+				document.getElementById("test").click(); // press test button
+			}
+		});
+		
+		function plusDivs(n) {
+			document.getElementById("ans").style.visibility = 'hidden';
+			showDivs(slideIndex += n);
+		}
+
+		function showDivs(n) {
+			var x = document.getElementsByClassName("flash-cards");
+			if (n > x.length) {slideIndex = 1}    
+			if (n < 1) {slideIndex = x.length}
+			for (var i = 0; i < x.length; i++) {
+				x[i].style.display = "none";  
+			}
+			//show pictures
+			x[slideIndex-1].style.display = "block";
+			//check image name/set answer:
+			answer = x[slideIndex-1].src;
+			var fileNameIndex = answer.lastIndexOf("/") + 1;
+			answer = answer.substr(fileNameIndex).slice(0, -4);
+			//set up audio:
+			document.getElementById("hear").src = "audio/" + answer + ".wav";
+			//
+			setans();
+		}
+		
+		//deals with spaces
+		function setans(){
+			var array;
+			if(answer.includes("_")){
+				array = answer.split("_");
+				answer = "";
+				for(var i = 0; i < array.length; i++){
+					answer += array[i] + " ";
+				}
+			}
+		}
+		
+		//checks correctness 
+		function check(){
+			var x = document.getElementById("wrd");
+			//had to add toLowerCase for mobile
+			if (x.value.trim().toLowerCase() === answer.trim()){
+				ans(1);
+			} else {
+				ans(0);
+			}
+			//rehide labels after little time
+			setTimeout(function() {
+				document.getElementById("right").style.visibility = 'hidden';
+				document.getElementById("wrong").style.visibility = 'hidden';
+			}, 1000);
+		}
+		//show labels for user evaluation upon right/wrong
+		function ans(x){
+			if (x > 0){
+				document.getElementById("right").style.visibility = 'visible';
+				setTimeout(function() {
+					plusDivs(1);
+				}, 1000);
+			} else {
+				document.getElementById("wrong").style.visibility = 'visible';
+			}
+		}
+		
+		function showans(){
+			document.getElementById("ans").innerHTML = answer;
+			document.getElementById("ans").style.visibility = 'visible';
+		}
+		
+		function shuffle(){
+			var x = document.getElementsByClassName("flash-cards");
+			var shuf = [];
+			for (var i = 0; i < x.length; i++) {
+				x[i].style.display = "none";
+				shuf[i] = i;
+			}
+			shuf.sort(function(a, b){return 0.5 - Math.random()});
+			x[shuf[0]].style.display = "block";
+			answer = x[shuf[0]].src;
+			var fileNameIndex = answer.lastIndexOf("/") + 1;
+			answer = answer.substr(fileNameIndex).slice(0, -4);
+			setans();
+			document.getElementById("ans").style.visibility = 'hidden';
+			document.getElementById("hear").src = "audio/" + answer + ".wav";
+		}
+		
+	</script>
+	<footer></footer>	
+  </body>
+</html>
