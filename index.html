@@ -97,6 +97,26 @@
 		<img class="flash-cards" src="characters/younger_brother.jpg">
 		<img class="flash-cards" src="characters/name.jpg">
 		<img class="flash-cards" src="characters/also.jpg">
+		<img class="flash-cards" src="characters/weekend.jpg">
+		<img class="flash-cards" src="characters/play_ball.jpg">
+		<img class="flash-cards" src="characters/watch_or_look_or_read.jpg">
+		<img class="flash-cards" src="characters/television.jpg">
+		<img class="flash-cards" src="characters/to_sing_a_song.jpg">
+		<img class="flash-cards" src="characters/to_dance.jpg">
+		<img class="flash-cards" src="characters/to_listen.jpg">
+		<img class="flash-cards" src="characters/music.jpg">
+		<img class="flash-cards" src="characters/book.jpg">
+		<img class="flash-cards" src="characters/correct.jpg">
+		<img class="flash-cards" src="characters/some.jpg">
+		<img class="flash-cards" src="characters/movie.jpg">
+		<img class="flash-cards" src="characters/often.jpg">
+		<img class="flash-cards" src="characters/to_go.jpg">
+		<img class="flash-cards" src="characters/foreign_country.jpg">
+		<img class="flash-cards" src="characters/invite_someone.jpg">
+		<img class="flash-cards" src="characters/yesterday.jpg">
+		<img class="flash-cards" src="characters/so.jpg">
+		<img class="flash-cards" src="characters/a_point_in_time.jpg">
+		
 		<button class="display-left" onclick="plusDivs(-1)">&#10094;</button>
 		<button class="display-right" onclick="plusDivs(1)">&#10095;</button>
 		<br> <!-- new line between buttons -->
@@ -225,9 +245,9 @@
 			answer = x[shuf[0]].src;
 			var fileNameIndex = answer.lastIndexOf("/") + 1;
 			answer = answer.substr(fileNameIndex).slice(0, -4);
+			document.getElementById("hear").src = "audio/" + answer + ".wav";
 			setans();
 			document.getElementById("ans").style.visibility = 'hidden';
-			document.getElementById("hear").src = "audio/" + answer + ".wav";
 		}
 		
 	</script>
