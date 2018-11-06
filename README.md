@@ -7,19 +7,6 @@ I'm assuming you already understand the appropriate things required to assemble 
 elements for a basic webpage. I don't use anything other than css, html, and javascript. I do have
 some custom audio files to improve the quality of these digital flashcards.
 
-
-** first edit
-This is already hosted at: http://www.thoughtvoke.com/clouisville/index.html
-so if you are curious about how something should work, the way I have it set up already
-is the way it is intended to function.
-**
-
-** final edit
-a few updates I made. Just wanted to update what I've already uploaded. Some of my audio recordings are 
-not correct pronounciations which a few native speakers and as well as my teacher informed me of
-upon me showing them this. I do dislike this, but I am going to just submit what I've already assembled. 
-**
-
 Thanks.
 
 Joseph Taylor Perkinson
